@@ -87,7 +87,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>  
 <body>
- <marquee><h1 style="font-size:300%">NEW USER REGISTRATION</h1></marquee>  
+ <marquee><h1 style="font-size:300%">Report The Issue</h1></marquee>  
         <div class="navbar">
 <a href="http://localhost/clean/home.html"><button class="btn" align="right"><i class="fa fa-home"></i></button></a>
   <a href="http://localhost/clean/login.php">User Login</a>
@@ -120,7 +120,7 @@
 <td><input type="file" name="uploadfile" value=""/></td>
 </center>
  </table> 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" value="upload file" name="submit"><br>
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" value="Register" name="submit"> 
               
         </fieldset>  
