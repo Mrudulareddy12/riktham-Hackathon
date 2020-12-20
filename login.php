@@ -88,7 +88,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>  
 <body>
- <marquee><h1 style="font-size:200%">Online Attendance Management System</h1></marquee>   
+ <marquee><h1 style="font-size:200%">Login Form</h1></marquee>   
  <div class="navbar">
    <a href="http://localhost/clean/home.html"><button class="btn" align="right"><i class="fa fa-home"></i></button></a>
   <a href="http://localhost/clean/register.php">Register</a>
@@ -121,8 +121,8 @@ if(!empty($_POST['user']) && !empty($_POST['pass'])) {
     $user=$_POST['user'];  
     $pass=$_POST['pass'];  
   
-    $con=mysqli_connect('localhost','root','','user-registration') or die("Can't connect to server");  
-    mysqli_select_db($con,'user-registration') or die("cannot select DB");  
+    $con=mysqli_connect('localhost','root','','clean') or die("Can't connect to server");  
+    mysqli_select_db($con,'clean') or die("cannot select DB");  
   
     $query=mysqli_query($con,"SELECT * FROM login WHERE username='".$user."' AND password='".$pass."'");  
     $numrows=mysqli_num_rows($query);  
@@ -136,7 +136,7 @@ if(!empty($_POST['user']) && !empty($_POST['pass'])) {
   
     if($user == $dbusername && $pass == $dbpassword)  
     {  
-  	echo '<a href=attendance.php  target=_blank>Click here to mark the Attendance</a>';
+  	echo '<a href=upload.php  target=_blank>Click here to report the issue</a>';
     }  
     } else {  
     echo "Invalid username or password!";  
